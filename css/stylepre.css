@@ -1,0 +1,45 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.conten{
+    background-color: aquamarine;
+    text-align: center;
+    justify-content: space-between;
+}
+.headed{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+}
+.nab{
+    gap: 10px;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    
+}
+.nab li{
+}
+
+
+
+.pregunt{
+    display: flex; 
+    align-items: center;
+    margin-bottom: 0px;
+    height: 20px;
+}
+.respuest{
+    margin-left: 10px;
+}
+.retro{
+    margin: 0px;
+}
+.quest{
+    border: solid 5px;
+}

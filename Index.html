@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagara Prox</title>
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="icon" type="image/png" href="favicon/red.png">
+    <link rel="stylesheet" href="css/in.css">
+</head>
+<body>
+    <header class="header">
+        
+        <div class="menu container">
+            <div class="logos" style="display: flex; align-items: center;">
+            <img src="/img/telaraña.png" class="tela" style="width: 5rem;">
+            <a href="#" class="logo">SagaraProx MX</a>
+            </div>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    
+                    <li><a href="question.html">Cuestionario</a></li>
+                    <li><a href="cotizador.html">Cotizador</a></li>
+                    <li><a href="Combocapi.html">Paises</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-conter container">
+            <h1>SagaraProx MX</h1>
+        </div>
+    </header>
+    <div class="intro">
+
+        <p>
+            Bienvenidos 
+        </p>
+        <br>
+        <p>
+            En este proyecto encontraras distintas pagonas web las cuales se fueron desarrollando a lo largo de este parcial 
+            entre ellas encontraras un Cuestionario basico en Ingles el cual se desarrollo unicamente con radio butons, asi 
+            como una encuesta sobre las capitales y paises del mundo y el cual se hizo mediante combo box y que cuenta con 10 
+            sencillas preguntas aparte cuneta con botones los cuales te diran tu puntuacion o podras reiniciar el cuestioanrio 
+            o encuesta las veces que quieras para sacar una calificaion exelente, y por ultimo una pagina en la cual podras saber 
+            el precio de una computadora por medio de un cotizador el cual tiene nueve categorias y en el cual se se juntaron 
+            distintas tecnicas tales como: El combo Box, Radio Button y el checkbox ademas de distintos stylos sin mas empero y 
+            sea de su agrado.
+        </p>
+
+    </div>
+    <div class="carrusel-container">
+        <div class="carrusel-slide">
+            <img src="img/testeo.png" alt="Imagen 1">
+        </div>
+        <div class="carrusel-slide">
+            <img src="img/question.png" alt="Imagen 2">
+        </div>
+        <div class="carrusel-slide">
+            <img src="img/country.png" alt="Imagen 3">
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer" style="align-items: center;">
+        <div style="align-items: center; display: flex; text-align: center;  margin-left: 50px; "> 
+             <img src="/img/telaraña.png" class="tela" style="width: 3rem;">
+            <p>
+            Copyright © RedStone 2023
+            </p>
+
+        </div>
+    </footer>
+    <script>
+        var slideIndex = 0;
+        mostrarSlides();
+
+        function mostrarSlides() {
+            var i;
+            var slides = document.getElementsByClassName("carrusel-slide");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(mostrarSlides, 3000); // Cambia la imagen cada 2 segundos
+        }
+    </script>
+</body>
+</html>

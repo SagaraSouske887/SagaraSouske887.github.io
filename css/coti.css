@@ -1,0 +1,24 @@
+.cont_coti{
+    max-width: 1000px;
+    align-items: center;
+    margin: auto;
+    border: 4px solid;
+    /*
+    display: flex;
+    gap: 15px;
+    padding-left: 10px;
+    */
+}
+.opc{
+    display: flex;
+    justify-content: space-between;
+
+}
+.opc_1{
+    
+}
+.Quist{
+    width: 38%;
+    border: solid 4px;
+    font-size: 20px;
+}

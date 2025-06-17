@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Grid Column</title>
+    <style>
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+            grid-gap: 10px; /* Espacio entre las celdas de la cuadrícula */
+        }
+
+        .item {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .item1 {
+            grid-column: span 2; /* Ocupa dos columnas */
+        }
+
+        .item2 {
+            grid-column: 2 / 4; /* Comienza en la segunda columna y termina en la cuarta columna */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="item item1">Elemento 1 (Ocupa 2 columnas)</div>
+        <div class="item item2">Elemento 2 (Comienza en la columna 2 y termina en la columna 4)</div>
+        <div class="item">Elemento 3</div>
+        <div class="item">Elemento 4</div>
+        <div class="item">Elemento 5</div>
+    </div>
+
+</body>
+</html>
